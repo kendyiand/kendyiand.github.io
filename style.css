@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: start;
     color: white;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .app-container {
@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     background-color: #333947;
     padding: 20px;
-    gap: 50px;
+    gap: 30px;
     overflow: hidden;
 }
 .header {
@@ -36,6 +36,10 @@ body {
     width: 100%;
     flex-wrap: nowrap;
     gap: 18px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
 
 }
@@ -76,14 +80,14 @@ body {
     color: #6f7481;
 }
 .fa-magnifying-glass {
- font-size: 20px;
+    font-size: 20px;
     color: #6f7481;
 }
 .products {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    overflow: scroll;
+    overflow-y: auto;
 
 }
 .product {
@@ -95,21 +99,58 @@ body {
     flex-direction: column;
     gap: 20px;
 }
-.product__image img{
+.product__image {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 8px;
     overflow: hidden;
 }
-.product__controlls {
-    display: flex;
+
+.product__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.product__button {
+.product__info {
+    width: 148px;
+
+}
+.product__name {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a .product__controls {
+    display: flex;
+
+}
+a .product__controls:hover {
+    cursor: pointer;
+}
+a .product__button {
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 10px;
     background-color: #333947;
     border-radius: 12px;
     display: flex;
     justify-content: center;
-    gap: 5px    ;
+    gap: 5px;
+    outline: none;
+    transition: background-color 0.3s;
 }
+a .product__button:active {
+    background-color: #454d60;
+}
+.no-stock {
+    color: #bd5454;
+    font-size: 150%;
+}
+
