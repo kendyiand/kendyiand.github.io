@@ -153,4 +153,9 @@ a .product__button:active {
     color: #bd5454;
     font-size: 150%;
 }
+/*@media (max-width: 390px) {*/
+/*    .product {*/
+/*        flex: 0 0 100%; !* Один столбец при ширине экрана менее 390px *!*/
+/*    }*/
+/*}*/
 
