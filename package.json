@@ -21,6 +21,7 @@
   "homepage": "https://github.com/kendyiand/kendyiand.github.io#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "node-sass": "^9.0.0",
     "sass-loader": "^13.3.2",
