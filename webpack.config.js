@@ -2,7 +2,7 @@ const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
-
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
     entry: './src/index.js',
@@ -42,5 +42,12 @@ module.exports = {
                 { from: "src/assets", to: "assets" },
             ],
         }),
+        new BrowserSyncPlugin({
+            // browse to http://localhost:3000/ during development,
+            // ./public directory is being served
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: ['dist'] }
+        })
     ]
 };
