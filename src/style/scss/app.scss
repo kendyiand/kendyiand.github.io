@@ -1,7 +1,6 @@
 $color_1: white;
-$color_2: #fff;
-$color_3: #6f7481;
-$color_4: #bd5454;
+$color_2: #6f7481;
+$color_3: #bd5454;
 $font-family_1: Arial, Helvetica, sans-serif;
 $background-color_1: #232e3c;
 $background-color_2: #17212b;
@@ -24,12 +23,12 @@ h1 {
 }
 body {
     margin: 0;
-    background-color: var(--tg-theme-secondary-bg-color);
+    background-color: $background-color_2;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
-    color: var(--tg-theme-text-color);
+    color: $color_1;
     font-family: $font-family_1;
 }
 .app-container {
@@ -61,15 +60,15 @@ body {
     height: 34px;
     padding: 6px 16px;
     gap: 8px;
-    background-color: var(--tg-theme-bg-color);
+    background-color: $background-color_1;
     border-radius: 8px;
 
     input {
         width: 100%;
         padding: 0;
-        background: var(--tg-theme-bg-color);
+        background: $background-color_1;
         border: none;
-        color: $color_2;
+        color: $color_1;
         outline: none;
     }
 }
@@ -81,7 +80,7 @@ body {
     }
 }
 .header__settings-button {
-    background-color: var(--tg-theme-bg-color);
+    background-color: $background-color_1;
     padding: 6px;
     height: 34px;
     width: 34px;
@@ -96,11 +95,11 @@ body {
 }
 .fa-filter {
     font-size: 14px;
-    color: $color_3;
+    color: $color_2;
 }
 .fa-magnifying-glass {
     font-size: 16px;
-    color: $color_3;
+    color: $color_2;
 }
 .products {
     display: flex;
@@ -111,7 +110,7 @@ body {
 .product {
     flex: 0 0 calc(50% - 4px);
     padding: 10px;
-    background-color: var(--tg-theme-bg-color);
+    background-color: $background-color_1;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -154,11 +153,11 @@ a {
     }
     .product__button {
         font-weight: 600;
-        color: var(--tg-theme-text-color);
+        color: $color_1;
         font-family: $font-family_1;
         width: 100%;
         padding: 10px;
-        background-color: var(--tg-theme-secondary-bg-color);
+        background-color: $background-color_2;
         border-radius: 6px;
         display: flex;
         justify-content: center;
@@ -166,11 +165,11 @@ a {
         outline: none;
         transition: background-color 0.3s;
         &:active {
-            background-color: $background-color_3;
+            background-color: $background-color_2;
         }
     }
 }
 .no-stock {
-    color: $color_4;
+    color: $color_3;
     font-size: 150%;
 }
