@@ -24,7 +24,7 @@ h1 {
 }
 body {
     margin: 0;
-    background-color: var(--tg-theme-bg-color);
+    background-color: var(--tg-theme-secondary-bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -61,13 +61,13 @@ body {
     height: 34px;
     padding: 6px 16px;
     gap: 8px;
-    background-color: $background-color_1;
+    background-color: var(--tg-theme-bg-color);
     border-radius: 8px;
 
     input {
         width: 100%;
         padding: 0;
-        background: $background-color_1;
+        background: var(--tg-theme-bg-color);
         border: none;
         color: $color_2;
         outline: none;
@@ -81,7 +81,7 @@ body {
     }
 }
 .header__settings-button {
-    background-color: $background-color_1;
+    background-color: var(--tg-theme-bg-color);
     padding: 6px;
     height: 34px;
     width: 34px;
@@ -111,7 +111,7 @@ body {
 .product {
     flex: 0 0 calc(50% - 4px);
     padding: 10px;
-    background-color: $background-color_1;
+    background-color: var(--tg-theme-bg-color);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -154,11 +154,11 @@ a {
     }
     .product__button {
         font-weight: 600;
-        color: $color_1;
+        color: var(--tg-theme-text-color);
         font-family: $font-family_1;
         width: 100%;
         padding: 10px;
-        background-color: $background-color_2;
+        background-color: var(--tg-theme-secondary-bg-color);
         border-radius: 6px;
         display: flex;
         justify-content: center;
