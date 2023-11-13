@@ -24,7 +24,7 @@ h1 {
 }
 body {
     margin: 0;
-    background-color: $background-color_2;
+    background-color: var(--tg-theme-bg-color);
     width: 100%;
     display: flex;
     justify-content: center;
